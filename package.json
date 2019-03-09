@@ -1,0 +1,37 @@
+{
+  "name": "silky",
+  "description": "A silky smooth D3/React data visualization library",
+  "private": true,
+  "scripts": {},
+  "keywords": [
+    "react",
+    "d3",
+    "visualization",
+    "data",
+    "charts",
+    "graphs",
+    "silky"
+  ],
+  "engines": {
+    "node": ">= 8.0.0 < 12.0.0",
+    "npm": ">= 3.x <= 6.x",
+    "yarn": ">=0.27.5 || >=1.0.0-20170811"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.1"
+  },
+  "author": "Juan D. Gomez <dg.dave@gmail.com> (https://davidgomez.dev/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davegomez/silky"
+  },
+  "bugs": {
+    "url": "https://github.com/davegomez/silky/issues"
+  },
+  "homepage": "https://github.com/davegomez/silky#readme",
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
+}
