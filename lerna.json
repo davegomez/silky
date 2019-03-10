@@ -1,9 +1,8 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "command": {
     "publish": {
+      "allowBranch": "master",
       "ignoreChanges": [
         "*.md",
         "*.txt",
@@ -14,7 +13,5 @@
   },
   "version": "independent",
   "npmClient": "yarn",
-  "npmClientArgs": [
-    "--no-lockfile"
-  ]
+  "npmClientArgs": ["--no-lockfile"]
 }
