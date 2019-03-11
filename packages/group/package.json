@@ -8,10 +8,7 @@
   "unpkg": "umd/silky-group.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
-    "coverage": "codecov",
-    "dev": "cross-env NODE_ENV=development rollup -c -w",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "dev": "cross-env NODE_ENV=development rollup -c -w"
   },
   "engines": {
     "node": ">=8"
@@ -36,17 +33,9 @@
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
+    "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "babel-jest": "^24.3.0",
-    "codecov": "^3.2.0",
     "cross-env": "^5.2.0",
-    "eslint": "^5.15.1",
-    "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.5.0-alpha.0",
-    "jest": "^24.3.0",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "react-testing-library": "^6.0.0",
     "rollup": "^1.5.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-clear": "^2.0.7",
@@ -67,9 +56,5 @@
   "bugs": {
     "url": "https://github.com/davegomez/silky/issues"
   },
-  "homepage": "https://github.com/davegomez/silky#readme",
-  "jest": {
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
-  }
+  "homepage": "https://github.com/davegomez/silky#readme"
 }
