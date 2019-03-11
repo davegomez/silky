@@ -3,12 +3,14 @@
   "command": {
     "publish": {
       "allowBranch": "master",
+      "conventionalCommits": true,
       "ignoreChanges": [
         "*.md",
         "*.txt",
         "*.json",
-        "packages/__@(tests|mocks)__/**"
-      ]
+        "packages/__@(tests|mocks|fixtures)__/**"
+      ],
+      "message": "chore(release): publish"
     }
   },
   "version": "independent",

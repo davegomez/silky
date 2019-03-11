@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "coverage": "codecov",
+    "postinstall": "lerna bootstrap",
+    "tag": "lerna version",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "tdd": "jest --watch"
   },
   "keywords": [
     "react",

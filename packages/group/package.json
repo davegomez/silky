@@ -8,7 +8,8 @@
   "unpkg": "umd/silky-group.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
-    "dev": "cross-env NODE_ENV=development rollup -c -w"
+    "dev": "cross-env NODE_ENV=development rollup -c -w",
+    "prepublish": "yarn build"
   },
   "engines": {
     "node": ">=8"
@@ -26,7 +27,8 @@
     "data",
     "visualization",
     "data-visualization",
-    "svg"
+    "svg",
+    "vx"
   ],
   "author": "Juan D. Gomez <dg.dave@gmail.com> (https://davidgomez.dev/)",
   "license": "MIT",
@@ -48,6 +50,10 @@
   "peerDependencies": {
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
