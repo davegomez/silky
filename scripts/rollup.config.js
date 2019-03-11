@@ -40,7 +40,11 @@ const commonPlugins = () => [
   }),
   babel({
     babelrc: false,
-    presets: [['@babel/preset-env', { modules: false }], '@babel/preset-react'],
+    presets: [
+      ['@babel/preset-env', { modules: false }],
+      '@babel/preset-flow',
+      '@babel/preset-react',
+    ],
     extensions: EXTENSIONS,
     exclude: 'node_modules/**',
   }),
