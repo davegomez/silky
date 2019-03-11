@@ -2,7 +2,11 @@
   "name": "silky",
   "description": "A silky smooth D3/React data visualization library",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "coverage": "codecov",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
   "keywords": [
     "react",
     "d3",
@@ -18,7 +22,20 @@
     "yarn": ">=0.27.5 || >=1.0.0-20170811"
   },
   "devDependencies": {
-    "lerna": "^3.13.1"
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.3.1",
+    "codecov": "^3.2.0",
+    "eslint": "^5.15.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.0",
+    "jest": "^24.3.1",
+    "lerna": "^3.13.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-testing-library": "^6.0.0"
   },
   "author": "Juan D. Gomez <dg.dave@gmail.com> (https://davidgomez.dev/)",
   "license": "MIT",
