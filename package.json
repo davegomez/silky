@@ -4,19 +4,21 @@
   "private": true,
   "scripts": {
     "coverage": "codecov",
+    "lint": "eslint **/*.js --quiet",
     "postinstall": "lerna bootstrap",
     "tag": "lerna version",
     "test": "jest",
     "tdd": "jest --watch"
   },
   "keywords": [
-    "react",
     "d3",
-    "visualization",
-    "data",
+    "react",
     "charts",
-    "graphs",
-    "silky"
+    "data",
+    "visualization",
+    "dataviz",
+    "svg",
+    "vx"
   ],
   "engines": {
     "node": ">= 8.0.0 < 12.0.0",
