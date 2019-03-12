@@ -8,7 +8,9 @@
   "unpkg": "umd/silky-group.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
-    "dev": "cross-env NODE_ENV=development rollup -c -w",
+    "clean": "rimraf cjs esm umd",
+    "dev": "cross-env NODE_ENV=development rollup -c -w && yarn clean",
+    "postpublish": "yarn clean",
     "prepublish": "yarn build"
   },
   "engines": {
@@ -38,6 +40,7 @@
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "cross-env": "^5.2.0",
+    "rimraf": "^2.6.3",
     "rollup": "^1.5.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-clear": "^2.0.7",
