@@ -1,4 +1,2 @@
 node_modules/*
-packages/cjs/*
-packages/esm/*
-packages/umd/*
+*/node_modules/*
