@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "coverage": "codecov",
+    "flow": "flow",
     "lint": "eslint '**/*.js' --quiet",
     "postinstall": "lerna bootstrap",
     "tag": "lerna version",
@@ -30,6 +31,8 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@emotion/babel-preset-css-prop": "^10.0.9",
+    "@emotion/core": "^10.0.9",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.3.1",
     "codecov": "^3.2.0",
@@ -37,7 +40,9 @@
     "eslint-plugin-flowtype": "^3.4.2",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.5.0",
+    "flow-bin": "^0.94.0",
     "jest": "^24.3.1",
+    "jest-emotion": "^10.0.9",
     "lerna": "^3.13.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -55,6 +60,9 @@
   "homepage": "https://github.com/davegomez/silky#readme",
   "jest": {
     "coverageDirectory": "./coverage/",
-    "collectCoverage": true
+    "collectCoverage": true,
+    "snapshotSerializers": [
+      "jest-emotion"
+    ]
   }
 }

@@ -16,6 +16,15 @@ const CODES = [
   'CIRCULAR_DEPENDENCY',
 ];
 
+const env = process.env.NODE_ENV;
+
+const cssOptions = {
+  sourceMap: true,
+  autoLabel: env !== 'production',
+  labelFormat: '[local]',
+  cssPropOptimization: true,
+};
+
 const getChunks = URI =>
   readdirSync(path.resolve(URI))
     .filter(x => x.includes('.js'))
@@ -30,8 +39,6 @@ const discardWarning = warning => {
   console.error(warning);
 };
 
-const env = process.env.NODE_ENV;
-
 const commonPlugins = () => [
   clear({
     targets: ['cjs', 'esm', 'umd'],
@@ -45,7 +52,9 @@ const commonPlugins = () => [
       ['@babel/preset-env', { modules: false }],
       '@babel/preset-flow',
       '@babel/preset-react',
+      '@emotion/babel-preset-css-prop',
     ],
+    plugins: [['emotion', cssOptions]],
     extensions: EXTENSIONS,
     exclude: 'node_modules/**',
   }),
