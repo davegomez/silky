@@ -1,19 +1,23 @@
-module.exports = function (wallaby) {
+module.exports = function(wallaby) {
+  return {
+    files: [
+      'packages/**/*.js',
+      'packages/**/__@(mocks|fixtures)__/*.js',
+      '!packages/**/__tests__/*.js',
+      '!packages/**/node_modules/**',
+    ],
 
-    return {
-      files: ['packages/**/*.js', '!packages/**/__tests__/*.js', '!packages/**/node_modules/**'],
-  
-      tests: ['packages/**/__tests__/*.js', '!packages/**/node_modules/**'],
-  
-      env: {
-        type: 'node',
-        runner: 'node'
-      },
+    tests: ['packages/**/__tests__/*.js', '!packages/**/node_modules/**'],
 
-      compilers: {
-        '**/*.js': wallaby.compilers.babel()
-      },
-  
-      testFramework: 'jest'
-    };
+    env: {
+      type: 'node',
+      runner: 'node',
+    },
+
+    compilers: {
+      '**/*.js': wallaby.compilers.babel(),
+    },
+
+    testFramework: 'jest',
   };
+};
