@@ -26,6 +26,7 @@ const discardWarning = warning => {
     return;
   }
 
+  // eslint-disable-next-line no-console
   console.error(warning);
 };
 
