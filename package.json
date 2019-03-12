@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "coverage": "codecov",
-    "lint": "eslint **/*.js --quiet",
+    "lint": "eslint '**/*.js' --quiet",
     "postinstall": "lerna bootstrap",
     "tag": "lerna version",
     "test": "jest",
