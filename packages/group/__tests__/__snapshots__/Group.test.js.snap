@@ -2,8 +2,7 @@
 
 exports[`Group 1`] = `
 <g
-  class="silky-group undefined"
-  transform="translate(0, 0)"
+  class="silky-group "
 >
   foo
 </g>
@@ -11,8 +10,20 @@ exports[`Group 1`] = `
 
 exports[`Group width custom position 1`] = `
 <g
-  class="silky-group undefined"
+  class="silky-group "
   transform="translate(10, 10)"
+>
+  foo
+</g>
+`;
+
+exports[`Group with Emotion 1`] = `
+.emotion-0 {
+  color: black;
+}
+
+<g
+  class="silky-group emotion-0"
 >
   foo
 </g>
@@ -21,7 +32,6 @@ exports[`Group width custom position 1`] = `
 exports[`Group with custom class 1`] = `
 <g
   class="silky-group foo"
-  transform="translate(0, 0)"
 >
   foo
 </g>

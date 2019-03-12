@@ -1,10 +1,17 @@
 // @flow
 import React from 'react';
 
-type props = {
+type CSS = {
+  map: string,
+  name: string,
+  styles: string,
+};
+
+type Props = {
   children: any,
-  className: string,
-  position: {
+  className?: string,
+  css?: CSS,
+  position?: {
     left: number,
     top: number,
   },
@@ -12,14 +19,16 @@ type props = {
 
 export default function Group({
   children,
-  className,
-  position: { left = 0, top = 0 } = {},
+  className = '',
+  css,
+  position,
   ...restProps
-}: props) {
+}: Props) {
   return (
     <g
       className={`silky-group ${className}`}
-      transform={`translate(${left}, ${top})`}
+      css={css}
+      transform={position && `translate(${position.left}, ${position.top})`}
       {...restProps}
     >
       {children}
