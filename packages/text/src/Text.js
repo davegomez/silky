@@ -1,13 +1,7 @@
 // @flow
 import React from 'react';
-
-type CSS = {
-  map: string,
-  name: string,
-  styles: string,
-};
-
-type Adjust = 'spacing' | 'spacingAndGlyphs';
+import { getTransform } from '../../utils';
+import type { CSS, Transform } from '../../utils/types';
 
 type Props = {
   children: any,
@@ -15,12 +9,8 @@ type Props = {
   css?: CSS,
   dx?: number | string,
   dy?: number | string,
-  lengthAdjust?: Adjust,
-  transform?: {
-    left?: number,
-    top?: number,
-    rotation?: number | string,
-  },
+  lengthAdjust?: 'spacing' | 'spacingAndGlyphs',
+  transform?: Transform,
   textLength?: number | string,
   x?: number | string,
   y?: number | string,
@@ -33,16 +23,12 @@ export default function Text({
   dx,
   dy,
   lengthAdjust,
-  transform = {},
+  transform,
   textLength,
   x,
   y,
   ...restProps
 }: Props) {
-  var { left, rotation, top } = transform;
-  var translate = left && top ? `translate(${left}, ${top})` : '';
-  var rotate = rotation ? `rotate(${rotation})` : '';
-
   return (
     <text
       className={`silky-text ${className}`}
@@ -51,7 +37,7 @@ export default function Text({
       dy={dy}
       lengthAdjust={lengthAdjust}
       textLength={textLength}
-      transform={`${translate} ${rotate}`}
+      transform={getTransform(transform)}
       x={x}
       y={y}
       {...restProps}

@@ -3,34 +3,6 @@
 exports[`Text 1`] = `
 <text
   class="silky-text "
-  transform=" "
->
-  foo
-</text>
-`;
-
-exports[`Text width transform rotate 1`] = `
-<text
-  class="silky-text "
-  transform=" rotate(10 20, 30)"
->
-  foo
-</text>
-`;
-
-exports[`Text width transform translate 1`] = `
-<text
-  class="silky-text "
-  transform="translate(10, 10) "
->
-  foo
-</text>
-`;
-
-exports[`Text width transform translate and rotate 1`] = `
-<text
-  class="silky-text "
-  transform="translate(10, 10) rotate(90)"
 >
   foo
 </text>
@@ -43,7 +15,6 @@ exports[`Text with Emotion 1`] = `
 
 <text
   class="silky-text emotion-0"
-  transform=" "
 >
   foo
 </text>
@@ -52,7 +23,6 @@ exports[`Text with Emotion 1`] = `
 exports[`Text with custom class 1`] = `
 <text
   class="silky-text foo"
-  transform=" "
 >
   foo
 </text>
@@ -63,7 +33,6 @@ exports[`Text with horizontal and vertical text shift 1`] = `
   class="silky-text "
   dx="10"
   dy="10"
-  transform=" "
 >
   foo
 </text>
@@ -73,7 +42,6 @@ exports[`Text with lengthAdjust:spacing 1`] = `
 <text
   class="silky-text "
   lengthAdjust="spacing"
-  transform=" "
 >
   foo
 </text>
@@ -83,7 +51,6 @@ exports[`Text with lengthAdjust:spacingAndGlyphs 1`] = `
 <text
   class="silky-text "
   lengthAdjust="spacingAndGlyphs"
-  transform=" "
 >
   foo
 </text>
@@ -93,7 +60,6 @@ exports[`Text with textLength 1`] = `
 <text
   class="silky-text "
   textLength="10%"
-  transform=" "
 >
   foo
 </text>
@@ -102,7 +68,6 @@ exports[`Text with textLength 1`] = `
 exports[`Text with x and y coordinates 1`] = `
 <text
   class="silky-text "
-  transform=" "
   x="10"
   y="10"
 >

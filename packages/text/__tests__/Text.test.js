@@ -111,50 +111,6 @@ test('Text with textLength', () => {
   expect(text.innerHTML).toBe('foo');
 });
 
-test('Text width transform translate', () => {
-  const { container } = render(
-    <svg>
-      <Text transform={{ left: 10, top: 10 }}>foo</Text>
-    </svg>
-  );
-
-  const text = container.querySelector('text');
-  expect(text).toMatchSnapshot();
-  expect(text.classList.contains('silky-text')).toBe(true);
-  expect(text.getAttribute('transform')).toEqual('translate(10, 10) ');
-  expect(text.innerHTML).toBe('foo');
-});
-
-test('Text width transform rotate', () => {
-  const { container } = render(
-    <svg>
-      <Text transform={{ rotation: '10 20, 30' }}>foo</Text>
-    </svg>
-  );
-
-  const text = container.querySelector('text');
-  expect(text).toMatchSnapshot();
-  expect(text.classList.contains('silky-text')).toBe(true);
-  expect(text.getAttribute('transform')).toEqual(' rotate(10 20, 30)');
-  expect(text.innerHTML).toBe('foo');
-});
-
-test('Text width transform translate and rotate', () => {
-  const { container } = render(
-    <svg>
-      <Text transform={{ left: 10, top: 10, rotation: 90 }}>foo</Text>
-    </svg>
-  );
-
-  const text = container.querySelector('text');
-  expect(text).toMatchSnapshot();
-  expect(text.classList.contains('silky-text')).toBe(true);
-  expect(text.getAttribute('transform')).toEqual(
-    'translate(10, 10) rotate(90)'
-  );
-  expect(text.innerHTML).toBe('foo');
-});
-
 test('Text with x and y coordinates', () => {
   const { container } = render(
     <svg>
