@@ -1,17 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Group 1`] = `
+exports[`G 1`] = `
 <g
   class="silky-group "
+  transform=" "
 >
   foo
 </g>
 `;
 
-exports[`Group width custom position 1`] = `
+exports[`Group width transform rotate 1`] = `
 <g
   class="silky-group "
-  transform="translate(10, 10)"
+  transform=" rotate(10 20, 30)"
+>
+  foo
+</g>
+`;
+
+exports[`Group width transform translate 1`] = `
+<g
+  class="silky-group "
+  transform="translate(10, 10) "
+>
+  foo
+</g>
+`;
+
+exports[`Group width transform translate and rotate 1`] = `
+<g
+  class="silky-group "
+  transform="translate(10, 10) rotate(90)"
 >
   foo
 </g>
@@ -24,6 +43,7 @@ exports[`Group with Emotion 1`] = `
 
 <g
   class="silky-group emotion-0"
+  transform=" "
 >
   foo
 </g>
@@ -32,6 +52,7 @@ exports[`Group with Emotion 1`] = `
 exports[`Group with custom class 1`] = `
 <g
   class="silky-group foo"
+  transform=" "
 >
   foo
 </g>

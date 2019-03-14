@@ -11,9 +11,10 @@ type Props = {
   children: any,
   className?: string,
   css?: CSS,
-  position?: {
-    left: number,
-    top: number,
+  transform?: {
+    left?: number,
+    top?: number,
+    rotation?: number | string,
   },
 };
 
@@ -21,14 +22,18 @@ export default function Group({
   children,
   className = '',
   css,
-  position,
+  transform = {},
   ...restProps
 }: Props) {
+  var { left, rotation, top } = transform;
+  var translate = left && top ? `translate(${left}, ${top})` : '';
+  var rotate = rotation ? `rotate(${rotation})` : '';
+
   return (
     <g
       className={`silky-group ${className}`}
       css={css}
-      transform={position && `translate(${position.left}, ${position.top})`}
+      transform={`${translate} ${rotate}`}
       {...restProps}
     >
       {children}
