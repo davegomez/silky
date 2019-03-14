@@ -5,7 +5,7 @@ import type { Transform } from './types';
 // value based on the passed object properties
 export default function getTransform(transform: Transform = {}) {
   var { matrix, rotate, scale, skew, translate } = transform;
-  var join = x => x.join(', ');
+  var join = (xs: [any]): string => xs.join(', ');
   var attrs = [];
 
   matrix && attrs.push(`matrix(${join(matrix)})`);
