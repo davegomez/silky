@@ -58,33 +58,42 @@ render(<App />, document.getElementById('root'));
 
 ### `className`
 
-- Signature:
-  ```
-  <className?: string>
-  ```
-- Defaults: `'silky-group'`
-- Notes: any additional class name will be appended to the default one.
+- **Signature:**
+
+```
+  className?: string
+```
+
+- **Defaults:** `'silky-group'`
+- **Description:** any additional class name will be appended to the default one.
+- **Documentation:** [https://reactjs.org/docs/faq-styling.html](https://reactjs.org/docs/faq-styling.html)
 
 ### `css`
 
-- Signature:
-  ```
+- **Signature:**
+
+```
   css?: Object
-  ```
-- Defaults: `null`
-- Notes: accepts an [Emotion](https://emotion.sh) CSS declaration using the [`css` prop](https://emotion.sh/docs/css-prop).
+```
+
+- **Defaults:** `null`
+- **Description:** accepts an [Emotion](https://emotion.sh) CSS declaration using the `css` prop.
+- **Documentation:** [https://emotion.sh/docs/css-prop](https://emotion.sh/docs/css-prop)
 
 ### `transform`
 
-- Signature:
-  ```
+- **Signature:**
+
+```
   transform?: {
-    matrix?: [number],
-    rotate?: number | string,
-    scale?: number | [number],
-    skew?: string | [string],
-    translate?: [number | string],
+    matrix?: [number]
+    rotate?: number | string
+    scale?: number | [number]
+    skew?: string | [string]
+    translate?: [number | string]
   }
-  ```
-- Defaults: `null`
-- Notes: will generate the correct `transform` attribute value based on the properties passed in the object.
+```
+
+- **Defaults:** `null`
+- **Description:** will generate the correct `transform` attribute value based on the properties passed in the object.
+- **Documentation:** [https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform)
