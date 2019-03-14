@@ -8,60 +8,6 @@ exports[`G 1`] = `
 </g>
 `;
 
-exports[`Group width transform matrix 1`] = `
-<g
-  class="silky-group "
-  transform="matrix(1, 2, 3, 4, 5)"
->
-  foo
-</g>
-`;
-
-exports[`Group width transform rotate 1`] = `
-<g
-  class="silky-group "
-  transform="rotate(10 20, 30)"
->
-  foo
-</g>
-`;
-
-exports[`Group width transform rotate and translate 1`] = `
-<g
-  class="silky-group "
-  transform="rotate(90) translate(10, 10)"
->
-  foo
-</g>
-`;
-
-exports[`Group width transform scale 1`] = `
-<g
-  class="silky-group "
-  transform="scale(0.5)"
->
-  foo
-</g>
-`;
-
-exports[`Group width transform skew 1`] = `
-<g
-  class="silky-group "
-  transform="skew(30deg, 20deg)"
->
-  foo
-</g>
-`;
-
-exports[`Group width transform translate 1`] = `
-<g
-  class="silky-group "
-  transform="translate(10, 10)"
->
-  foo
-</g>
-`;
-
 exports[`Group with Emotion 1`] = `
 .emotion-0 {
   color: black;
