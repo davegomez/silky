@@ -3,7 +3,7 @@ import type { Transform } from './types';
 
 // Will take the transform object and return the correct transform attribute
 // value based on the passed object properties
-export default function getTransform(transform: Transform = {}) {
+export default function getTransform(transform: Transform = {}): string | null {
   var { matrix, rotate, scale, skew, translate } = transform;
   var join = (xs: [any]): string => xs.join(', ');
   var attrs = [];
