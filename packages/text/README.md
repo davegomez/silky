@@ -62,8 +62,6 @@ render(<App />, document.getElementById('root'));
 
 ### `className`
 
-- **Signature:**
-
 ```
   className?: string
 ```
@@ -72,9 +70,9 @@ render(<App />, document.getElementById('root'));
 - **Description:** any additional class name will be appended to the default one.
 - **Documentation:** [https://reactjs.org/docs/faq-styling.html](https://reactjs.org/docs/faq-styling.html)
 
-### `css`
+---
 
-- **Signature:**
+### `css`
 
 ```
   css?: Object
@@ -84,9 +82,9 @@ render(<App />, document.getElementById('root'));
 - **Description:** accepts an [Emotion](https://emotion.sh) CSS declaration using the `css` prop.
 - **Documentation:** [https://emotion.sh/docs/css-prop](https://emotion.sh/docs/css-prop)
 
-### `x`
+---
 
-- **Signature:**
+### `x`
 
 ```
   x?: number | string
@@ -96,9 +94,9 @@ render(<App />, document.getElementById('root'));
 - **Description:** determines the x coordinate of the starting point of the text baseline.
 - **Documentation:** [https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x)
 
-### `y`
+---
 
-- **Signature:**
+### `y`
 
 ```
   y?: number | string
@@ -108,9 +106,9 @@ render(<App />, document.getElementById('root'));
 - **Description:** determines the y coordinate of the starting point of the text baseline.
 - **Documentation:** [https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y)
 
-### `dy`
+---
 
-- **Signature:**
+### `dy`
 
 ```
   dy?: number | string
@@ -120,21 +118,21 @@ render(<App />, document.getElementById('root'));
 - **Description:** allows you to shift the text position vertically.
 - **Documentation:** [https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dy](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dy)
 
+---
+
 ### `dx`
 
-- **Signature:**
-
 ```
-  dx?: number | string,
+  dx?: number | string
 ```
 
 - **Defaults:** `null`
 - **Description:** allows you to shift the text position horizontally.
 - **Documentation:** [https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dx](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dx)
 
-### `dy`
+---
 
-- **Signature:**
+### `dy`
 
 ```
   dy?: number | string
@@ -144,9 +142,9 @@ render(<App />, document.getElementById('root'));
 - **Description:** allows you to shift the text position vertically.
 - **Documentation:** [https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dy](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dy)
 
-### `lengthAdjust`
+---
 
-- **Signature:**
+### `lengthAdjust`
 
 ```
   lengthAdjust?: 'spacing' | 'spacingAndGlyphs'
@@ -156,9 +154,9 @@ render(<App />, document.getElementById('root'));
 - **Description:** when an SVG `<text>` or `<tspan>` element has a specific length, set using the textLength attribute, the lengthAdjust attribute controls how the text is stretched or compressed into that length.
 - **Documentation:** [https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lengthAdjust](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lengthAdjust)
 
-### `textLength`
+---
 
-- **Signature:**
+### `textLength`
 
 ```
   textLength?: number | string
@@ -168,9 +166,9 @@ render(<App />, document.getElementById('root'));
 - **Description:** lets you specify the width of the space into which the text will draw.
 - **Documentation:** [https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/textLength](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/textLength)
 
-### `transform`
+---
 
-- **Signature:**
+### `transform`
 
 ```
   transform?: {

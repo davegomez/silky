@@ -58,8 +58,6 @@ render(<App />, document.getElementById('root'));
 
 ### `className`
 
-- **Signature:**
-
 ```
   className?: string
 ```
@@ -68,9 +66,9 @@ render(<App />, document.getElementById('root'));
 - **Description:** any additional class name will be appended to the default one.
 - **Documentation:** [https://reactjs.org/docs/faq-styling.html](https://reactjs.org/docs/faq-styling.html)
 
-### `css`
+---
 
-- **Signature:**
+### `css`
 
 ```
   css?: Object
@@ -80,9 +78,9 @@ render(<App />, document.getElementById('root'));
 - **Description:** accepts an [Emotion](https://emotion.sh) CSS declaration using the `css` prop.
 - **Documentation:** [https://emotion.sh/docs/css-prop](https://emotion.sh/docs/css-prop)
 
-### `transform`
+---
 
-- **Signature:**
+### `transform`
 
 ```
   transform?: {
