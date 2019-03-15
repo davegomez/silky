@@ -5,6 +5,7 @@ module.exports = function(wallaby) {
       'packages/**/__@(mocks|fixtures)__/*.js',
       '!packages/**/__tests__/*.js',
       '!packages/**/node_modules/**',
+      '!packages/**/@(cjs|esm|umd)/**',
     ],
 
     tests: ['packages/**/__tests__/*.js', '!packages/**/node_modules/**'],
