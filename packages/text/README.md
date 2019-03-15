@@ -9,6 +9,7 @@ If text is included within SVG not inside of a <text> element, it is not rendere
 - [ ] Vertical alignment
 - [ ] Multiline text
 - [ ] Dynamic scaling
+- [ ] Shape wrapping
 
 ## Install
 
