@@ -8,7 +8,7 @@ expect.addSnapshotSerializer(serializer);
 expect.extend(matchers);
 afterEach(cleanup);
 
-test('G', () => {
+test('Group', () => {
   const { container } = render(
     <svg>
       <Group>foo</Group>
