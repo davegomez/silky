@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Line 1`] = `
+<line
+  class="silky-line "
+  stroke="#AABBCC"
+  x1="0"
+  x2="100"
+  y1="80"
+  y2="20"
+/>
+`;
+
+exports[`Line with Emotion 1`] = `
+.emotion-0 {
+  stroke: black;
+}
+
+<line
+  class="silky-line emotion-0"
+  x1="0"
+  x2="100"
+  y1="80"
+  y2="20"
+/>
+`;
+
+exports[`Line with custom class 1`] = `
+<line
+  class="silky-line foo"
+  stroke="black"
+  x1="10%"
+  x2="80%"
+  y1="10%"
+  y2="80%"
+/>
+`;
+
+exports[`Line with pathLength 1`] = `
+<line
+  class="silky-line "
+  pathLength="2"
+  stroke="black"
+  x1="10%"
+  x2="80%"
+  y1="10%"
+  y2="80%"
+/>
+`;
