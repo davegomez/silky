@@ -1,0 +1,76 @@
+{
+  "name": "@silky/axis",
+  "version": "0.1.0",
+  "description": "Silky Axis",
+  "sideEffects": false,
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "unpkg": "umd/silky-axis.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "clean": "rimraf cjs esm umd",
+    "postpublish": "yarn clean",
+    "prepublishOnly": "yarn build",
+    "ttd": "cross-env NODE_ENV=development rollup -c -w && yarn clean"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "cjs/*",
+    "esm/*",
+    "umd/*",
+    "src"
+  ],
+  "keywords": [
+    "d3",
+    "react",
+    "charts",
+    "data",
+    "visualization",
+    "dataviz",
+    "svg",
+    "vx"
+  ],
+  "author": "Juan D. Gomez <dg.dave@gmail.com> (https://davidgomez.dev/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/babel-preset-css-prop": "^10.0.9",
+    "babel-plugin-emotion": "^10.0.9",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.15.1",
+    "eslint-plugin-flowtype": "^3.4.2",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.0",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.5.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-terser": "^4.0.4"
+  },
+  "peerDependencies": {
+    "@emotion/core": ">= 10.0.0",
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davegomez/silky"
+  },
+  "bugs": {
+    "url": "https://github.com/davegomez/silky/issues"
+  },
+  "homepage": "https://github.com/davegomez/silky#readme"
+}
