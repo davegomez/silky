@@ -56,14 +56,14 @@ render(<App />, document.getElementById('root'));
 
 ## Props
 
-### `className`
+### `classNames`
 
 ```
-  className?: string
+  classNames?: [string]
 ```
 
 - **Defaults:** `'silky-group'`
-- **Description:** any additional class name will be appended to the default one.
+- **Description:** any additional class name in the list will be join with the default one and the one/s passed in the `className` prop.
 - **Documentation:** [https://reactjs.org/docs/faq-styling.html](https://reactjs.org/docs/faq-styling.html)
 
 ---

@@ -2,7 +2,7 @@
 
 exports[`Group 1`] = `
 <g
-  class="silky-group "
+  class="silky-group  "
 >
   foo
 </g>
@@ -14,15 +14,23 @@ exports[`Group with Emotion 1`] = `
 }
 
 <g
-  class="silky-group emotion-0"
+  class="silky-group emotion-0 "
 >
   foo
 </g>
 `;
 
-exports[`Group with custom class 1`] = `
+exports[`Group with class 1`] = `
 <g
-  class="silky-group foo"
+  class="silky-group foo "
+>
+  foo
+</g>
+`;
+
+exports[`Group with list of classes 1`] = `
+<g
+  class="silky-group foo bar baz"
 >
   foo
 </g>

@@ -21,7 +21,7 @@ test('Group', () => {
   expect(group.innerHTML).toBe('foo');
 });
 
-test('Group with custom class', () => {
+test('Group with class', () => {
   const { container } = render(
     <svg>
       <Group className="foo">foo</Group>
@@ -32,6 +32,24 @@ test('Group with custom class', () => {
   expect(group).toMatchSnapshot();
   expect(group.classList.contains('silky-group')).toBe(true);
   expect(group.classList.contains('foo')).toBe(true);
+  expect(group.innerHTML).toBe('foo');
+});
+
+test('Group with list of classes', () => {
+  const { container } = render(
+    <svg>
+      <Group className="foo" classNames={['bar', 'baz']}>
+        foo
+      </Group>
+    </svg>
+  );
+
+  const group = container.querySelector('g');
+  expect(group).toMatchSnapshot();
+  expect(group.classList.contains('silky-group')).toBe(true);
+  expect(group.classList.contains('foo')).toBe(true);
+  expect(group.classList.contains('bar')).toBe(true);
+  expect(group.classList.contains('baz')).toBe(true);
   expect(group.innerHTML).toBe('foo');
 });
 
