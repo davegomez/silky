@@ -1,0 +1,23 @@
+{
+  "name": "@silky/playground",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Silky Playground",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open"
+  },
+  "license": "UNLICENSED",
+  "author": "Juan D. Gomez <dg.dave@gmail.com> (https://davidgomez.dev/)",
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "parcel-bundler": "^1.12.3"
+  }
+}

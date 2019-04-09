@@ -2,9 +2,11 @@
 
 # dependencies
 node_modules/
+.cache/
 cjs/
 esm/
 umd/
+dist/
 /.pnp
 .pnp.js
 /docs/node_modules

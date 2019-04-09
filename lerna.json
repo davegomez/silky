@@ -1,5 +1,5 @@
 {
-  "packages": ["packages/*"],
+  "packages": ["packages/*", "playground"],
   "command": {
     "publish": {
       "allowBranch": "master",
